@@ -4,60 +4,16 @@ import { createRoot } from 'react-dom/client'
 import './global.css'
 
 import { Tweet } from './components/Tweet'
-
-import { Bell, BookmarkSimple, DotsThreeCircle, Envelope, FileText, Hash, House, Sparkle, User } from 'phosphor-react'
-
-import logo from './assets/x-logo.svg'
+import { Sidebar } from './components/Sidebar'
+import { Header } from './components/Header'
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
     <div className="layout">
-      <div className="sidebar">
-        <img className='logo' src={logo} alt="logo" />
-
-        <nav className="main-navigation">
-          <a href=""><House />
-            Home</a>
-          <a href="">
-            <Hash />
-            Explore
-          </a>
-          <a href="">
-            <Bell />
-            Notifications
-          </a>
-          <a href="">
-            <Envelope />
-            Messages
-          </a>
-          <a href="">
-            <BookmarkSimple />
-            Bookmarks
-          </a>
-          <a href="">
-            <FileText />
-            Lists
-          </a>
-          <a href="">
-            <User />
-            Profile
-          </a>
-          <a href="">
-            <DotsThreeCircle />
-            More
-          </a>
-        </nav>
-
-        <button className="new-tweet">Post</button>
-      </div>
+      <Sidebar />
       <div className="content">
         <main className="timeline">
-          <div className="timeline-header">
-            Home
-            <a href="">
-              <Sparkle />
-            </a>
-          </div>
+          <Header title="Home" />
 
           <form className='new-tweet-form'>
             <label htmlFor="tweet">
