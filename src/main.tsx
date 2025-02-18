@@ -3,17 +3,11 @@ import { createRoot } from 'react-dom/client'
 
 import './global.css'
 
-import logo from './assets/x-logo.svg'
-import home from './assets/home-logo.svg'
-import explore from './assets/explore-logo.svg'
-import notifications from './assets/notifications-logo.svg'
-import messages from './assets/messages-logo.svg'
-import bookmarks from './assets/bookmarks-logo.svg'
-import lists from './assets/lists-logo.svg'
-import profile from './assets/profile-logo.svg'
-import more from './assets/more-logo.svg'
-import sparkle from './assets/sparkle-logo.svg'
 import { Tweet } from './components/Tweet'
+
+import { Bell, BookmarkSimple, DotsThreeCircle, Envelope, FileText, Hash, House, Sparkle, User } from 'phosphor-react'
+
+import logo from './assets/x-logo.svg'
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
@@ -22,14 +16,36 @@ createRoot(document.getElementById('root') as HTMLElement).render(
         <img className='logo' src={logo} alt="logo" />
 
         <nav className="main-navigation">
-          <a href=""><img className='logo' src={home} alt="home-logo" />Home</a>
-          <a href=""><img className='logo' src={explore} alt="explore-logo" />Explore</a>
-          <a href=""><img className='logo' src={notifications} alt="notifications-logo" />Notifications</a>
-          <a href=""><img className='logo' src={messages} alt="messages-logo" />Messages</a>
-          <a href=""><img className='logo' src={bookmarks} alt="bookmarks-logo" />Bookmarks</a>
-          <a href=""><img className='logo' src={lists} alt="lists-logo" />Lists</a>
-          <a href=""><img className='logo' src={profile} alt="profile-logo" />Profile</a>
-          <a href=""><img className='logo' src={more} alt="more-logo" />More</a>
+          <a href=""><House />
+            Home</a>
+          <a href="">
+            <Hash />
+            Explore
+          </a>
+          <a href="">
+            <Bell />
+            Notifications
+          </a>
+          <a href="">
+            <Envelope />
+            Messages
+          </a>
+          <a href="">
+            <BookmarkSimple />
+            Bookmarks
+          </a>
+          <a href="">
+            <FileText />
+            Lists
+          </a>
+          <a href="">
+            <User />
+            Profile
+          </a>
+          <a href="">
+            <DotsThreeCircle />
+            More
+          </a>
         </nav>
 
         <button className="new-tweet">Post</button>
@@ -38,7 +54,9 @@ createRoot(document.getElementById('root') as HTMLElement).render(
         <main className="timeline">
           <div className="timeline-header">
             Home
-            <a href=""><img src={sparkle} alt="" /></a>
+            <a href="">
+              <Sparkle />
+            </a>
           </div>
 
           <form className='new-tweet-form'>
