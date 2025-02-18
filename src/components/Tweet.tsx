@@ -1,5 +1,5 @@
 import './tweet.css'
-import { ChatCircle } from 'phosphor-react'
+import { ArrowsClockwise, ChatCircle, Heart } from 'phosphor-react'
 
 export function Tweet() {
   return (
@@ -19,10 +19,19 @@ export function Tweet() {
           Além disso, troquei do Yarn para o PNPM e o install das deps mudou de 24s para 8s 🔥
         </p>
 
-        <div className="content-footer">
+        <div className="tweet-content-footer">
           <button>
             <ChatCircle style={{ color: '#fff' }} />
           </button>
+
+          <button>
+            <ArrowsClockwise style={{ color: '#fff' }} />
+          </button>
+
+          <button>
+            <Heart style={{ color: '#fff' }} />
+          </button>
+
 
         </div>
       </div>
