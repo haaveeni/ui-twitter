@@ -82,8 +82,8 @@ a {
 }
 
 .content {
-  border-left: 1px solid #ebeef0;
-  border-right: 1px solid #ebeef0;
+  border-left: 1px solid #2F2F2F;
+  border-right: 1px solid #2F2F2F;
 }
 
 .timeline-header {
@@ -152,8 +152,8 @@ a {
 }
 
 .separator {
-  background: #f7f9fa;
-  border-top: 1px solid #ebeef0;
-  border-bottom: 1px solid #ebeef0;
+  background: #202020;
+  border-top: 1px solid #2F2F2F;
+  border-bottom: 1px solid #2F2F2F;
   height: 0.75rem;
 }
