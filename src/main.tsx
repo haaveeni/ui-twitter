@@ -13,6 +13,7 @@ import lists from './assets/lists-logo.svg'
 import profile from './assets/profile-logo.svg'
 import more from './assets/more-logo.svg'
 import sparkle from './assets/sparkle-logo.svg'
+import { Tweet } from './components/Tweet'
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
@@ -39,6 +40,20 @@ createRoot(document.getElementById('root') as HTMLElement).render(
             Home
             <a href=""><img src={sparkle} alt="" /></a>
           </div>
+
+          <form className='new-tweet-form'>
+            <label htmlFor="tweet">
+              <img src="https://github.com/haaveeni.png" alt="Veridiana Lucena" />
+              <textarea id="tweet" placeholder="What's happening?" />
+            </label>
+
+            <button type='submit'>Tweet</button>
+          </form>
+          <div className="separator" />
+          <Tweet />
+          <Tweet />
+          <Tweet />
+          <Tweet />
         </main>
       </div>
     </div>
