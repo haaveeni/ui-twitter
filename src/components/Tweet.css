@@ -1,0 +1,11 @@
+.tweet img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+}
+
+.content-footer button {
+  background-color: transparent !important;
+  /* Ou a cor desejada */
+  border: none;
+}
