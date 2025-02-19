@@ -1,4 +1,4 @@
-import { Bell, BookmarkSimple, DotsThreeCircle, Envelope, FileText, Hash, House, User } from 'phosphor-react'
+import { Bell, BookmarkSimple, DotsThreeCircle, Envelope, FileText, Hash, House, Pencil, User } from 'phosphor-react'
 
 import logo from '../assets/x-logo.svg'
 import './sidebar.css'
@@ -11,38 +11,41 @@ export function Sidebar() {
 
       <nav className="main-navigation">
         <NavLink to="/"><House />
-          Home</NavLink>
+          <span>Home</span></NavLink>
         <a href="">
           <Hash />
-          Explore
+          <span>Explore</span>
         </a>
         <a href="">
           <Bell />
-          Notifications
+          <span>Notifications</span>
         </a>
         <a href="">
           <Envelope />
-          Messages
+          <span>Messages</span>
         </a>
         <a href="">
           <BookmarkSimple />
-          Bookmarks
+          <span>Bookmarks</span>
         </a>
         <a href="">
           <FileText />
-          Lists
+          <span>Lists</span>
         </a>
         <a href="">
           <User />
-          Profile
+          <span>Profile</span>
         </a>
         <a href="">
           <DotsThreeCircle />
-          More
+          <span>More</span>
         </a>
       </nav>
 
-      <button className="new-tweet">Post</button>
+      <button className="new-tweet">
+        <Pencil />
+        <span>Post</span>
+      </button>
     </div>
   )
 
