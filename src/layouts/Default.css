@@ -1,6 +1,7 @@
 .layout {
   margin: 0auto;
   min-width: 1000px;
+  min-height: 100vh;
 
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -9,4 +10,10 @@
 .content {
   border-left: 1px solid #2F2F2F;
   border-right: 1px solid #2F2F2F;
+}
+
+@media (max-width: 780px) {
+  .layout {
+    grid-template-columns: 80px 1fr;
+  }
 }
