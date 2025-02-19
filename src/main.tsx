@@ -3,32 +3,18 @@ import { createRoot } from 'react-dom/client'
 
 import './global.css'
 
-import { Tweet } from './components/Tweet'
 import { Sidebar } from './components/Sidebar'
-import { Header } from './components/Header'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './routes'
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
     <div className="layout">
       <Sidebar />
       <div className="content">
-        <main className="timeline">
-          <Header title="Home" />
 
-          <form className='new-tweet-form'>
-            <label htmlFor="tweet">
-              <img src="https://github.com/haaveeni.png" alt="Veridiana Lucena" />
-              <textarea id="tweet" placeholder="What's happening?" />
-            </label>
+        <RouterProvider router={router} />
 
-            <button type='submit'>Tweet</button>
-          </form>
-          <div className="separator" />
-          <Tweet />
-          <Tweet />
-          <Tweet />
-          <Tweet />
-        </main>
       </div>
     </div>
 
