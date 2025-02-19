@@ -1,15 +1,23 @@
-import { Form } from '../components/Form'
 import { Header } from '../components/Header'
 import { Separator } from '../components/Separator'
 
 import { Tweet } from '../components/Tweet'
+
+import './timeline.css'
 
 export function Timeline() {
   return (
     <main className="timeline">
       <Header title="Home" />
 
-      <Form />
+      <form className='new-tweet-form'>
+        <label htmlFor="tweet">
+          <img src="https://github.com/haaveeni.png" alt="Veridiana Lucena" />
+          <textarea id="tweet" placeholder="What's happening?" />
+        </label>
+
+        <button type='submit'>Tweet</button>
+      </form>
 
       <Separator />
 
