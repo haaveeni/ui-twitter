@@ -2,6 +2,7 @@ import { Bell, BookmarkSimple, DotsThreeCircle, Envelope, FileText, Hash, House,
 
 import logo from '../assets/x-logo.svg'
 import './sidebar.css'
+import { Link } from 'react-router-dom'
 
 export function Sidebar() {
   return (
@@ -9,8 +10,8 @@ export function Sidebar() {
       <img className='logo' src={logo} alt="logo" />
 
       <nav className="main-navigation">
-        <a href=""><House />
-          Home</a>
+        <Link to="/"><House />
+          Home</Link>
         <a href="">
           <Hash />
           Explore
